@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_white"
+    tools:context=".VerificationActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backRegButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_back"
+        android:fontFamily="@font/outfit_black"
+        android:gravity="left|center_vertical"
+        android:text="Назад"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNext"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/red_button"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Продолжить"
+        android:textAllCaps="false"
+        android:textColor="@color/my_white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/outfit_regular"
+        android:text="В течение 2 минут на номер\n+7 (906) 836 76-26 придет\nкод подтверждения"
+        android:textColor="#1A1A22"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Мы отправили\nсмс с кодом"
+        android:textColor="#1A1A22"
+        android:textSize="46sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/code_field"
+        android:textSize="24sp"
+        android:textColor="@color/my_black"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/code_field"
+        android:textSize="24sp"
+        android:textColor="@color/my_black"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber1"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber1" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/code_field"
+        android:textSize="24sp"
+        android:textColor="@color/my_black"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber1" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/code_field"
+        android:textSize="24sp"
+        android:textColor="@color/my_black"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber5"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber6" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/code_field"
+        android:textSize="24sp"
+        android:textColor="@color/my_black"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber6"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber6" />
+
+    <EditText
+        android:id="@+id/editTextNumber6"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/code_field"
+        android:textSize="24sp"
+        android:textColor="@color/my_black"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+</androidx.constraintlayout.widget.ConstraintLayout>

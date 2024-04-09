@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_white"
+    tools:context=".RegistrationActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backAuthButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_back"
+        android:fontFamily="@font/outfit_black"
+        android:gravity="left|center_vertical"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFirst"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Редактирование\nпрофиля"
+        android:textColor="#1A1A22"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRegPhone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/field"
+        android:ems="10"
+        android:fontFamily="@font/outfit_regular"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/my_black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFirst" />
+
+    <TextView
+        android:id="@+id/textRegPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/my_white"
+        android:fontFamily="@font/outfit_regular"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/phone"
+        android:textColor="@color/my_black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRegPhone"
+        app:layout_constraintStart_toStartOf="@+id/editTextRegPhone"
+        app:layout_constraintTop_toTopOf="@+id/editTextRegPhone" />
+
+    <EditText
+        android:id="@+id/editTextRegFirstName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/field"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/outfit_regular"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/my_black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegPhone" />
+
+    <TextView
+        android:id="@+id/textRegFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/my_white"
+        android:fontFamily="@font/outfit_regular"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/firstname"
+        android:textColor="@color/my_black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRegFirstName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRegFirstName"
+        app:layout_constraintTop_toTopOf="@+id/editTextRegFirstName" />
+
+    <EditText
+        android:id="@+id/editTextRegSecondName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/field"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/outfit_regular"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/my_black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegFirstName" />
+
+    <TextView
+        android:id="@+id/textRegSecondName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/my_white"
+        android:fontFamily="@font/outfit_regular"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/secondname"
+        android:textColor="@color/my_black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRegSecondName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRegSecondName"
+        app:layout_constraintTop_toTopOf="@+id/editTextRegSecondName" />
+
+    <EditText
+        android:id="@+id/editTextRegLogin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/field"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/outfit_regular"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/my_black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegSecondName" />
+
+    <EditText
+        android:id="@+id/editTextRegPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/field"
+        android:ems="10"
+        android:fontFamily="@font/outfit_regular"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/my_black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegLogin" />
+
+    <TextView
+        android:id="@+id/textRegLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/my_white"
+        android:fontFamily="@font/outfit_regular"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="email"
+        android:textColor="@color/my_black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRegLogin"
+        app:layout_constraintStart_toStartOf="@+id/editTextRegLogin"
+        app:layout_constraintTop_toTopOf="@+id/editTextRegLogin" />
+
+    <TextView
+        android:id="@+id/textRegPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/my_white"
+        android:fontFamily="@font/outfit_regular"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/password"
+        android:textColor="@color/my_black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRegPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextRegLogin"
+        app:layout_constraintTop_toTopOf="@+id/editTextRegPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/red_button"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Сохранить"
+        android:textAllCaps="false"
+        android:textColor="@color/my_white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

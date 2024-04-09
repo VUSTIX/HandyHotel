@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="sorting_options">
+        <item>По имени</item>
+        <item>По цене</item>
+    </string-array>
+</resources>

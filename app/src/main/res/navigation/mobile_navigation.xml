@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_hotels">
+
+    <fragment
+        android:id="@+id/navigation_hotels"
+        android:name="com.example.handyhotel.ui.hotels.HotelsFragment"
+        android:label="@string/title_rooms"
+        tools:layout="@layout/fragment_hotels" />
+
+    <fragment
+        android:id="@+id/navigation_services"
+        android:name="com.example.handyhotel.ui.services.ServicesFragment"
+        android:label="@string/title_services"
+        tools:layout="@layout/fragment_services" />
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.example.handyhotel.ui.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.handyhotel.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+
+
+
+</navigation>

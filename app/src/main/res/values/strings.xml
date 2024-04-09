@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Handy\nHotel</string>
+    <string name="tagline">Найди свой идеальный отдых</string>
+
+    <string name="phone">Номер телефона</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="firstname">Имя</string>
+    <string name="secondname">Фамилия</string>
+
+    <string name="log_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="back">Назад</string>
+
+    <string name="title_activity_app">AppActivity</string>
+    <string name="title_rooms">Номера</string>
+    <string name="title_services">Услуги</string>
+    <string name="title_news">Новости</string>
+    <string name="title_account">Аккаунт</string>
+</resources>
